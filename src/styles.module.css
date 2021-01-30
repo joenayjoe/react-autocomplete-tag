@@ -1,9 +1,59 @@
-/* add css module styles here (optional) */
+.autocomplete_tag {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.autocomplete_tag ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.autocomplete_tag .tag_container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.selected_tag_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.autocomplete_tag .tag_item {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: .25rem;
+    background-color: #ececf9;
+    width: max-content;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.autocomplete_tag .tag_input {
+    border: none;
+    height: calc(1.5em + 0.75rem + 2px)
+}
+
+.tag_item .tag_close {
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.tag_item .tag_close:hover {
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+
+.tag_autosuggestions {
+    border-top: 1px solid #cccccc;
+}
+
+.suggestion_item {
+    padding: 0.5rem;
+}
+
+.suggestion_item_hover {
+    cursor: pointer;
+    background-color: #cccccc;
 }

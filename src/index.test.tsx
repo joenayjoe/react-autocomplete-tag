@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import ReactTags from '.'
 
-describe('ExampleComponent', () => {
+describe('ReactTag', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(ReactTags).toBeTruthy()
   })
 })
