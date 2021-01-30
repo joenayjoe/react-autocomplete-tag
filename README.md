@@ -4,6 +4,12 @@
 
 [![NPM](https://img.shields.io/npm/v/react-autocomplete-tag.svg)](https://www.npmjs.com/package/react-autocomplete-tag) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+#### Screenshot 1 
+![Screenshot 1](example/public/tag1.png)
+
+#### Screenshot 2
+![Screenshot 2](example/public/tag2.png)
+
 ## Requirements
 
 - react: ^16.0.0
@@ -80,13 +86,13 @@ export default App
 
 ## Options
 
-| Option          | Type            | Default  Value      | Require / Optional | Description                                                                                                    |
+| Option          | Type            | Default Value  | Require / Optional | Description                                                                                                    |
 | --------------- | --------------- | -------------- | ------------------ | -------------------------------------------------------------------------------------------------------------- |
-| tags            | Array of String | []             | Require            | An array of tags that are displayed as pre-selected                                                      |
+| tags            | Array of String | []             | Require            | An array of tags that are displayed as pre-selected                                                            |
 | suggestions     | Array of String | []             | Require            | An array of suggestions                                                                                        |
-| placeholder     | String          | Enter tag      | Optional           | The placeholder for tag input                                                                                  |
+| placeholder     | String          | Enter a tag    | Optional           | The placeholder for tag input                                                                                  |
 | delimeters      | Array of String | ["Enter", ","] | Optional           | Specifies which characters should terminate tags input                                                         |
-| onAddHandler    | Function        | undefined      | Require            | Function called when the user wants to add a tag                                                                |
+| onAddHandler    | Function        | undefined      | Require            | Function called when the user wants to add a tag                                                               |
 | onDeleteHandler | Function        | undefined      | Require            | Function called when the user deletes a tag                                                                    |
 | onChangeHandler | Function        | undefined      | Optional           | Function called when the tag input value change. This is where you can update suggestions based on input value |
 

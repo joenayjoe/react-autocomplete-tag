@@ -11,5 +11,6 @@ code {
 }
 
 #root {
-    margin: 20px;
+    width: 40%;
+    margin: 100px auto;
 }

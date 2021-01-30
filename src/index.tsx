@@ -115,7 +115,7 @@ const ReactTags: React.FunctionComponent<IProp> = (props) => {
     <input
       type='text'
       className={styles.tag_input}
-      placeholder={props.placeholder ? props.placeholder : 'Enter tag'}
+      placeholder={props.placeholder ? props.placeholder : 'Enter a tag'}
       value={newTag}
       onChange={(e) => handleValueChange(e)}
       onKeyDown={(e) => handleKeyPress(e)}
