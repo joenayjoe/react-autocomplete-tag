@@ -6,10 +6,10 @@ interface IProp {
   tags: string[]
   suggestions: string[]
   placeholder?: string
+  delimeters?: string[]
   onAddHandler: (tag: string) => void
   onDeleteHandler: (idx: number) => void
   onChangeHandler?: (text: string) => void
-  delimeters?: string[]
 }
 
 const ReactTags: React.FunctionComponent<IProp> = (props) => {
@@ -64,6 +64,7 @@ const ReactTags: React.FunctionComponent<IProp> = (props) => {
     setTypedTag(t)
     props.onChangeHandler && props.onChangeHandler(t)
   }
+
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     let delimiters: string[] = props.delimeters
       ? props.delimeters
