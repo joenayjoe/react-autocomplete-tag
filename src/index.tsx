@@ -1,6 +1,6 @@
 import React, { useState, ChangeEvent } from 'react'
 
-import styles from './styles.module.css'
+import "./index.css";
 
 interface IProp {
   tags: string[]
@@ -27,10 +27,10 @@ const ReactTags: React.FunctionComponent<IProp> = (props) => {
   }
 
   const TagAutoSuggestions = props.suggestions.map((sug, idx) => {
-    var klass = styles.suggestion_item
+    var klass = 'suggestion_item'
 
     if (selectedAutoSuggestIndex === idx) {
-      klass = klass + ' ' + styles.suggestion_item_hover
+      klass = klass + ' ' + 'suggestion_item_hover'
     }
 
     return (
@@ -46,10 +46,10 @@ const ReactTags: React.FunctionComponent<IProp> = (props) => {
 
   const SelectedTags = props.tags.map((tag, idx) => {
     return (
-      <li key={idx} className={styles.tag_item}>
-        <span className={styles.tag_text}>{tag}</span>
+      <li key={idx} className={'tag_item'}>
+        <span className={'tag_text'}>{tag}</span>
         <span
-          className={styles.tag_close}
+          className={'tag_close'}
           onClick={() => props.onDeleteHandler(idx)}
         >
           &times;
@@ -100,21 +100,21 @@ const ReactTags: React.FunctionComponent<IProp> = (props) => {
   }
 
   const autoSuggestionContainer = props.suggestions.length ? (
-    <div className={styles.tag_autosuggestions}>
+    <div className={'tag_autosuggestions'}>
       <ul>{TagAutoSuggestions}</ul>
     </div>
   ) : null
 
   const selectedTagContainer = props.tags.length ? (
-    <div className={styles.selected_tags}>
-      <ul className={styles.selected_tag_list}>{SelectedTags}</ul>
+    <div className={'selected_tags'}>
+      <ul className={'selected_tag_list'}>{SelectedTags}</ul>
     </div>
   ) : null
 
   const tagInput = (
     <input
       type='text'
-      className={styles.tag_input}
+      className={'tag_input'}
       placeholder={props.placeholder ? props.placeholder : 'Enter a tag'}
       value={newTag}
       onChange={(e) => handleValueChange(e)}
@@ -122,8 +122,8 @@ const ReactTags: React.FunctionComponent<IProp> = (props) => {
     />
   )
   return (
-    <div className={styles.autocomplete_tag}>
-      <div className={styles.tag_container}>
+    <div className={'autocomplete_tag'}>
+      <div className={'tag_container'}>
         {selectedTagContainer}
         {tagInput}
       </div>

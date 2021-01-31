@@ -15,7 +15,7 @@
     padding: 0.5rem;
 }
 
-.selected_tag_list {
+.autocomplete_tag .selected_tag_list {
     display: flex;
     flex-wrap: wrap;
 }
@@ -35,25 +35,25 @@
     height: calc(1.5em + 0.75rem + 2px)
 }
 
-.tag_item .tag_close {
+.autocomplete_tag .tag_item .tag_close {
     cursor: pointer;
     padding: 0 5px;
 }
 
-.tag_item .tag_close:hover {
+.autocomplete_tag .tag_item .tag_close:hover {
     background-color: #cccccc;
     border-radius: 5px;
 }
 
-.tag_autosuggestions {
+.autocomplete_tag .tag_autosuggestions {
     border-top: 1px solid #cccccc;
 }
 
-.suggestion_item {
+.autocomplete_tag .suggestion_item {
     padding: 0.5rem;
 }
 
-.suggestion_item_hover {
+.autocomplete_tag .suggestion_item_hover {
     cursor: pointer;
     background-color: #cccccc;
 }

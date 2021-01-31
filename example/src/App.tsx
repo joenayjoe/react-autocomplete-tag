@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-import ReactTags from 'react-autocomplete-tag'
-import 'react-autocomplete-tag/dist/index.css'
+import ReactTags from 'react-autocomplete-tag';
+import 'react-autocomplete-tag/dist/index.css'; // load default style
 
 const App = () => {
   const tagList: string[] = [
@@ -11,9 +11,9 @@ const App = () => {
     'Bangladesh',
     'Burma',
     'China',
-    'Chili',
+    'Chile',
     'Denmark',
-    'Dhaka'
+    ''
   ]
   var [tags, setTags] = useState<string[]>([])
 
